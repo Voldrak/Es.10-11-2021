@@ -1,5 +1,39 @@
+* {
+    background: black;
+    color: blanchedalmond;    
+}
+
+body {
+    margin: 0;
+} 
+
+/* Head */
+.head {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.head h2 {
+    font-size: 250%;
+    margin-left: 10px;
+}
+
+.gif {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border: none;
+}
+
+.userPage {
+    margin: 0 20px ;
+}
+
+/* Modal */
+
 .modal {
-    padding: 30px 0 20px;
+    margin: 10px 20px ;
+    padding: 40px 0 50px;
     display: flex;
     justify-content: center;
   
@@ -11,3 +45,28 @@
     transition: 0.35s;
   }
   
+.username {
+    margin-right: 120px;
+}
+
+.btn {
+    width: 100%;
+    text-align: center;
+}
+ 
+#btnSend {
+    margin-top: 20px;
+    height: 50px;
+    width: 90px;
+} 
+
+.btn2 {
+    width: 100%;
+    margin-top: 100px;
+}
+
+#btnCalc {
+    margin-left: 50px;
+    height: 90px;
+    width: 150px;
+} 

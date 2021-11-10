@@ -1,5 +1,5 @@
 function sendCredentials(username) {
-    userPage.firstElementChild.textContent = `Buongiorno ${username}`;
+    nomeAcc.textContent = ` ${username}`;    
     // console.log(userPage.firstElementChild.textContent);
     // userPage.firstElementChild.textContent.replace("NOME", username);
   }
@@ -12,7 +12,9 @@ function sendCredentials(username) {
   function loadCredentials(key) {
     return window.localStorage.getItem(key);
   }
-  
+
+
+  const nomeAcc = document.querySelector(".nomeP")
   const userPage = document.querySelector(".userPage");
   const modalEl = document.querySelector(".modal");
   const userInputEl = document.querySelector("#user");
