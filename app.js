@@ -1,4 +1,8 @@
 function scalculator(numbers) {
+    try {
+        if (numbers.length === 1) throw "Hai passato un solo valore"
+        if (numbers.length === 0) throw "Nessun parametro passato alla funzione"
+    
     const sum = () => numbers.reduce ((acc, num) => acc + num);
     const sub = () => numbers.reduce ((acc, num) => acc - num);
     const mult = () => numbers.reduce ((acc, num) => acc * num);
@@ -17,4 +21,11 @@ function scalculator(numbers) {
         pow: pow(),
         sqrt: sqrt(),
     }
+    } catch (err){
+    console.log(err);
+} finally {
+    console.log("Hai fatto una scelta!");
+    }
+
 }
+
